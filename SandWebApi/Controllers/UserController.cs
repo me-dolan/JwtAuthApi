@@ -99,6 +99,9 @@ namespace SandWebApi.Controllers
             return Ok(new TokenResponse { AccesToken = tokenResponse.Item1, RefreshToken = tokenResponse.Item2 });
         }
 
+        
+        
+        
         [Authorize]
         [HttpGet]
         [Route("info")]
